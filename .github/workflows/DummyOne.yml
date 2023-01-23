@@ -21,6 +21,7 @@ jobs:
             cat ./markdown/home.json.textile > hello.json
             cat hello.json
             echo "{'a': 'b'}" >> hello.json
+            cat hello.json > ./markdown/home.json.textile
             cd markdown
             git config --local user.email "action@github.com"
             git config --local user.name "GitHub Action"
